@@ -1,0 +1,12 @@
+version: "3.4"
+services:
+  t3-gallery:
+    container_name: t3-gallery
+    image: node:18
+    working_dir: /var/www/html/app/
+    entrypoint: /bin/bash
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/var/www/html/app
+    tty: true
