@@ -18,6 +18,12 @@ install:
 dev:
 	$(NPM) dev
 
+db-push:
+	$(NPM) db:push
+
+db-studio:
+	$(NPM) db:studio
+
 start-dev:
 	$(DC) up -d && $(NPM) dev
 
